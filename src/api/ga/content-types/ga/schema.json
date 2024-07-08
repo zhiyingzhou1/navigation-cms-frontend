@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gas",
+  "info": {
+    "singularName": "ga",
+    "pluralName": "gas",
+    "displayName": "Ga"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "account": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

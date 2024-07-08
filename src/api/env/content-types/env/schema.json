@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "envs",
+  "info": {
+    "singularName": "env",
+    "pluralName": "envs",
+    "displayName": "Env"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "websites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::website.website",
+      "mappedBy": "env"
+    }
+  }
+}
